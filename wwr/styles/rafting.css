@@ -22,6 +22,10 @@ header {
   max-width: 1000px;
   padding-left: 2rem;
   padding-right: 2rem;
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  width: 840px;
+  margin: 0 auto;
 }
 
 #logo {
@@ -52,19 +56,12 @@ header {
   text-decoration: underline;
 }
 
-header {
-  background-color: var(--primary-color);
-  color: var(--accent2-color);
-}
-
 body {
   font-family: var(--body-font);
   color: var(--accent1-color);
 }
 
-header,
-main,
-footer {
+main {
   width: 840px;
   margin: 0 auto;
 }
@@ -87,6 +84,8 @@ footer {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  width: 840px;
+  margin: 0 auto;
 }
 
 .socialmedia {
