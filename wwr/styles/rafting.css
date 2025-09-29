@@ -3,6 +3,7 @@
   --secondary-color: #f4a261; /* warm sand */
   --accent1-color: #264653; /* dark slate blue */
   --accent2-color: #e9c46a; /* light golden yellow */
+  --contrasting-color: #fff; /* white text - make sure there is enough contrast with the background-color */
   --heading-font: "Times New Roman", "Georgia", serif;
   --body-font: Arial, Helvetica, sans-serif;
 }
@@ -47,14 +48,15 @@ header {
 
 .navigation a {
   display: block;
-  color: #000080;
+  color: var(--contrasting-color);
   padding: 20px;
   text-decoration: none;
   font-size: 1.2rem;
+  white-space: nowrap;
 }
 
 .navigation a:hover {
-  color: #ff6347;
+  color: var(--accent2-color);
   text-decoration: underline;
 }
 
@@ -70,7 +72,6 @@ h2 {
 
 nav,
 p,
-/* section, */
 article {
   margin: 16px;
   padding: 8px;
@@ -115,7 +116,7 @@ h1 {
   text-align: center;
   opacity: 0.7;
   background-color: var(--accent1-color);
-  color: #fff; /* white text - make sure there is enough contrast with the background-color */
+  color: var(--contrasting-color);
   font-family: var(--heading-font);
 }
 
@@ -127,7 +128,7 @@ h1 {
 .hero article {
   position: absolute;
   top: 250px;
-  color: var(--accent2-color);
+  color: var(--contrasting-color);
   background-color: var(--accent1-color);
 }
 
