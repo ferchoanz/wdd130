@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Exercise</title>
+    <link rel="stylesheet" href="styles/poll-form.css">
 </head>
 
 <body>
@@ -16,31 +17,40 @@
             <fieldset>
                 <legend>Contact Information</legend>
                 <!-- form elemens will go here -->
-                <label for="fullname">Full Name:</label>
-                <input id="fullname" type="text" name="fullname">
-
-                <label for="useremail">User email address:</label>
-                <input id="useremail" type="email" name="useremail">
+                <div class="form-item column2">
+                    <label for="fullname">Full Name:</label>
+                    <input id="fullname" type="text" name="fullname">
+                </div>
+                <div class="form-item column2">
+                    <label for="useremail">User email address:</label>
+                    <input id="useremail" type="email" name="useremail">
+                </div>
             </fieldset>
             <fieldset>
                 <legend>Questions</legend>
                 <!-- form elemens will go here -->
-                <label for="browser">What is your favorite browser?"</label>
-                <select name="browser" id="browser">
-                    <option value="chrome">Chrome</option>
-                    <option value="firefox">Firefox</option>
-                    <option value="safari">Safari</option>
-                    <option value="edge">Edge</option>
-                    <option value="brave">Brave</option>
-                    <option value="other">Other</option>
-                </select>
+                <div class="form-item column1">
+                    <label for="browser">What is your favorite browser?"</label>
+                    <select name="browser" id="browser">
+                        <option value="chrome">Chrome</option>
+                        <option value="firefox">Firefox</option>
+                        <option value="safari">Safari</option>
+                        <option value="edge">Edge</option>
+                        <option value="brave">Brave</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
 
-                <label for="pet">Do you have a household pet?</label>
-                <input type="checkbox" id="pet" name="pet">
+                <div class="form-item column1">
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                </div>
 
-                <label for="feedback">List the places you have live:</label>
-                <textarea name="feedback" id="feedback" placeholder="Stll Florida, Amsterdam. Tibuktu Mali"
-                    rows="4"></textarea>
+                <div class="form-item column2">
+                    <label for="feedback">List the places you have live:</label>
+                    <textarea name="feedback" id="feedback" placeholder="Stll Florida, Amsterdam. Tibuktu Mali"
+                        rows="4"></textarea>
+                </div>
             </fieldset>
             <button type="submit">Submit Poll</button>
         </form>
