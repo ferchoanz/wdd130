@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Exercise</title>
+</head>
+
+<body>
+    <header>
+        <h1>WDD 130 | HTML Form - User Poll</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <!-- form elemens will go here -->
+                <label for="fullname">Full Name:</label>
+                <input id="fullname" type="text" name="fullname">
+
+                <label for="useremail">User email address:</label>
+                <input id="useremail" type="email" name="useremail">
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <!-- form elemens will go here -->
+                <label for="browser">What is your favorite browser?"</label>
+                <select name="browser" id="browser">
+                    <option value="chrome">Chrome</option>
+                    <option value="firefox">Firefox</option>
+                    <option value="safari">Safari</option>
+                    <option value="edge">Edge</option>
+                    <option value="brave">Brave</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="pet">Do you have a household pet?</label>
+                <input type="checkbox" id="pet" name="pet">
+
+                <label for="feedback">List the places you have live:</label>
+                <textarea name="feedback" id="feedback" placeholder="Stll Florida, Amsterdam. Tibuktu Mali"
+                    rows="4"></textarea>
+            </fieldset>
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
+    <footer>
+        &copy;2025 | HTML Form - User Poll Activity | Fernando Pacheco
+    </footer>
+</body>
+
+</html>
