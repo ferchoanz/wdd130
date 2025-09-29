@@ -11,10 +11,16 @@ body {
   background: #fff;
 }
 
+header {
+  margin: 0 auto;
+  width: 650px;
+}
+
 h1 {
-  text-align: center;
   margin: 1rem;
+  font-size: 1.5em;
   color: navy;
+  text-align: center;
 }
 
 form {
@@ -102,4 +108,8 @@ footer {
 
 .column2 {
   grid-template-columns: 1fr 2fr;
+}
+
+label[for="feedback"] {
+  text-align: center;
 }
